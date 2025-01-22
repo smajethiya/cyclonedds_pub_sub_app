@@ -1,0 +1,18 @@
+#include "Header.idl"
+
+module ethernet_msgs {
+  module msg {
+    typedef uint8 uint8__6[6];
+    typedef uint8 uint8__2[2];
+    typedef sequence<uint8> uint8__seq;
+    struct EthernetFrame {
+      std_msgs::msg::Header header;
+
+      uint8__6 sender_mac;
+      uint8__6 receiver_mac;
+      unsigned short ether_type;
+      uint8__seq payload;
+
+    };
+  };
+};
