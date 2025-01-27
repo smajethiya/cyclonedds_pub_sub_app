@@ -1,4 +1,3 @@
-# cyclonedds_pub_sub_app
 # CanFrame Publisher and Subscriber
 
 This project demonstrates a publisher and subscriber implementation using `CanFrame` and `EthernetFrame` with C. It includes:
