@@ -58,3 +58,10 @@ target_link_libraries(ddsc_ethernetframe_sub CycloneDDS::ddsc ethernet_data)
 
 # Optional: Add static library for shared sources (if needed)
 add_library(common_frames STATIC ${SOURCES})
+
+# General setup
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
+
+conan_basic_setup(TARGETS)
+
